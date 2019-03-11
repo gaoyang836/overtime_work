@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="common.css">
     <title>加班统计小工具</title>
+    <script type="text/javascript">
+
+      function validate_required(field,alerttxt)
+      {
+      with (field)
+        {
+        if (value==null||value=="")
+          {alert(alerttxt);return false}
+        else {return true}
+        }
+      }
   </head>
   <body>
     <header>
             <h1>加班单</h1>
     </header>
     <div>
-      <form>
+      <form action="" method="POST">
         申请人:
         <input type="text" name="申请人:">
         <br>
